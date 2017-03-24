@@ -23,8 +23,13 @@ router.get('/', function(req,res) {
       res.send(500);
     } else {
       // We connected
-      db.query('SELECT "owner"."first_name", "owner"."last_name", "pets"."name","pets"."breed", "pets"."color" FROM "owner" JOIN "pets" ON "owner"."id" = "pets"."owner_id";',
-              function(queryError,result) {
+      var petQuery = 'SELECT "owner"."first_name", "owner"."last_name",'+
+      '"pets"."name","pets"."breed", "pets"."color", '+
+      '"pets"."pet_id", "visits"."check_in","visits"."check_out" '+
+      'FROM "owner" JOIN "pets" ON "owner"."id" = "pets"."owner_id"'+
+      'LEFT OUTER JOIN "visits" ON "pets"."pet_id" = "visits"."pet_id";';
+
+      db.query(petQuery,function(queryError,result) {
         // result is the result from our query
         done(); // releases the connection we have to the pool
         if (queryError) {
