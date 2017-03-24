@@ -1,18 +1,26 @@
 {
   "name": "crud_pethotel",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/app.js"
   },
-  "author": "",
+  "author": "teigen leonard",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
     "jquery": "^3.2.1",
     "pg": "^6.1.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erinkinnen/crudup_pet_hotel_team2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/erinkinnen/crudup_pet_hotel_team2/issues"
+  },
+  "homepage": "https://github.com/erinkinnen/crudup_pet_hotel_team2#readme",
+  "description": ""
 }
