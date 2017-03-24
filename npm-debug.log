@@ -1,21 +1,33 @@
 0 info it worked if it ends with ok
+<<<<<<< HEAD
 1 verbose cli [ '/usr/local/Cellar/node/7.7.2/bin/node',
 1 verbose cli   '/usr/local/bin/npm',
 1 verbose cli   'start' ]
 2 info using npm@4.1.2
 3 info using node@v7.7.2
+=======
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'start' ]
+2 info using npm@3.10.10
+3 info using node@v6.9.5
+>>>>>>> f9417001655ddec8500358c3774f7441fe73ea8d
 4 verbose run-script [ 'prestart', 'start', 'poststart' ]
 5 info lifecycle crud_pethotel@1.0.0~prestart: crud_pethotel@1.0.0
 6 silly lifecycle crud_pethotel@1.0.0~prestart: no script for prestart, continuing
 7 info lifecycle crud_pethotel@1.0.0~start: crud_pethotel@1.0.0
 8 verbose lifecycle crud_pethotel@1.0.0~start: unsafe-perm in lifecycle true
+<<<<<<< HEAD
 9 verbose lifecycle crud_pethotel@1.0.0~start: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/emilyh/Documents/Prime/week9/day5/petHotel/crudup_pet_hotel_team2/node_modules/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 10 verbose lifecycle crud_pethotel@1.0.0~start: CWD: /Users/emilyh/Documents/Prime/week9/day5/petHotel/crudup_pet_hotel_team2
+=======
+9 verbose lifecycle crud_pethotel@1.0.0~start: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/edison/Documents/Prime/AtomProjects/Week3/chi_day15/crud_pet_hotel/crudup_pet_hotel_team2/node_modules/.bin:/Library/Frameworks/Python.framework/Versions/3.5/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/Users/edison/Applications/gradle-2.3/bin:/Users/edison/Applications/apache-maven-3.3.1/bin:/usr/local/git/bin:/usr/local/mysql/bin:/usr/local/mysql/support-files:/Users/edison/Applications/kafka_2.10-0.8.2.1/bin:/Users/edison/Applications/felix-framework-5.0.0/bin
+10 verbose lifecycle crud_pethotel@1.0.0~start: CWD: /Users/edison/Documents/Prime/AtomProjects/Week3/chi_day15/crud_pet_hotel/crudup_pet_hotel_team2
+>>>>>>> f9417001655ddec8500358c3774f7441fe73ea8d
 11 silly lifecycle crud_pethotel@1.0.0~start: Args: [ '-c', 'node server/app.js' ]
 12 silly lifecycle crud_pethotel@1.0.0~start: Returned: code: 1  signal: null
 13 info lifecycle crud_pethotel@1.0.0~start: Failed to exec start script
 14 verbose stack Error: crud_pethotel@1.0.0 start: `node server/app.js`
 14 verbose stack Exit status 1
+<<<<<<< HEAD
 14 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:279:16)
 14 verbose stack     at emitTwo (events.js:106:13)
 14 verbose stack     at EventEmitter.emit (events.js:194:7)
@@ -30,6 +42,22 @@
 18 error argv "/usr/local/Cellar/node/7.7.2/bin/node" "/usr/local/bin/npm" "start"
 19 error node v7.7.2
 20 error npm  v4.1.2
+=======
+14 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:255:16)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at EventEmitter.emit (events.js:191:7)
+14 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:40:14)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at ChildProcess.emit (events.js:191:7)
+14 verbose stack     at maybeClose (internal/child_process.js:877:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+15 verbose pkgid crud_pethotel@1.0.0
+16 verbose cwd /Users/edison/Documents/Prime/AtomProjects/Week3/chi_day15/crud_pet_hotel/crudup_pet_hotel_team2
+17 error Darwin 16.4.0
+18 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "start"
+19 error node v6.9.5
+20 error npm  v3.10.10
+>>>>>>> f9417001655ddec8500358c3774f7441fe73ea8d
 21 error code ELIFECYCLE
 22 error crud_pethotel@1.0.0 start: `node server/app.js`
 22 error Exit status 1
