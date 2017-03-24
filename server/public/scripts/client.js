@@ -26,8 +26,14 @@ function displayInformation() {
                   owner_pet.id + '>Update</button></td>');
         $el.append('<td><button class="delete" data-pet_id='+
                             owner_pet.id + '>Delete</button></td>');
-        $el.append('<td><button class="in_out" data-pet_id='+
-                                                owner_pet.id + '>In</button></td>');
+
+        if (owner_pet.check_out === null && owner_pet.check_in !== null) {
+          $el.append('<td><button class="in_out" "data_pet_in="true" "data-pet_id='+
+                                                owner_pet.id + '>Out</button></td>');
+        } else {
+        $el.append('<td><button class="in_out" "data_pet_in="false" "data-pet_id='+
+                                              owner_pet.id + '>In</button></td>');
+        }
       }
     }
   });
