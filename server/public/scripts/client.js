@@ -1,3 +1,5 @@
+var editing = false;
+
 $(document).ready(function(){
   console.log("jQuery sourced");
 
@@ -10,6 +12,7 @@ $(document).ready(function(){
       pet.color = $( '#pet_color' ).val();
       pet.breed = $( '#pet_breed' ).val();
 
+
       $.ajax({
        type: 'POST',
        url: '/newPet',
@@ -19,5 +22,8 @@ $(document).ready(function(){
          //claudias function;
        }
      });
+     $('#pet_name').val('');
+   $('#pet_color').val('');
+   $('#pet_breed').val('');
   });
 });
