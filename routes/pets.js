@@ -34,7 +34,7 @@ router.get('/', function(req, res){
   });
 });
 
-router.post('/add', function(req, res){
+router.post('/pet', function(req, res){
   console.log(req.body);
   var name = req.body.name;
   var color = req.body.color;
