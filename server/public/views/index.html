@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pet Hotel Team 2</title>
+    <script type="text/javascript" src="vendors/jquery.js"></script>
+      <script type="text/javascript" src="scripts/client.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+  </head>
+  <body>
+  <div id="wrapper">
+    <header>
+      <h1>Pet Hotel Team 2</h1>
+    </header>
+
+    <h2>Owner Registration</h2>
+      <div class="owner_add">First Name:
+      <input type = "text" placeholder="first name" id="owner_first_name">
+      Last Name:
+      <input type = "text" placeholder="last name" id="owner_last_name">
+      <input type="submit" value="Register" id="register_button">
+    </div>
+
+    <h2>Pets</h2>
+      <div class="pet_add">
+        <p>
+        Owner Name:
+        <select>
+            <option value="owner1">Fiona Apple</option>
+            <option value="owner2">Max Payne</option>
+            <option value="owner3">Tyler Perry</option>
+            <option value="owner4">Roger Rabbit</option>
+        </select>
+        </p>
+        <p>
+          Pet Name:
+          <input type = "text" placeholder="pet name" id="pet_name">
+          Color:
+          <input type = "text" placeholder="pet color" id="pet_color">
+          Breed:
+          <input type = "text" placeholder="pet breed" id="pet_breed">
+          <input type="submit" value="Add Pet" id="add_pet_button">
+        </p>
+      </div>
+
+      <div class="pet_table">
+      </div>
+  </div>
+  </body>
+</html>
