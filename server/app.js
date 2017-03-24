@@ -9,7 +9,7 @@ var pets = [];
 app.use(express.static("server/public"));
 app.use(bodyParser.urlencoded({extended: true}));
 
-
+app.use('/pets', pets);
 
 app.post( '/newPet', function(req, res){
   console.log('newPet base hit');

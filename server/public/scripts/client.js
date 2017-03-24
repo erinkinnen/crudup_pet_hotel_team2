@@ -6,9 +6,9 @@ $(document).ready(function(){
       e.preventDefault();
       console.log( 'in add_pet_button on submit');
       var pet = {};
-      pet.name = $( '#pet_name').val();
-      pet.color = $( '#pet_color').val();
-      pet.breed = $( '#pet_breed').val();
+      pet.name = $( '#pet_name' ).val();
+      pet.color = $( '#pet_color' ).val();
+      pet.breed = $( '#pet_breed' ).val();
 
       $.ajax({
        type: 'POST',
